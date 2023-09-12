@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Quickie Text Color. */
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: #005EF9;
+}
+
+.text-deco {
+    text-decoration: none;
+}
+
+.text-deco a {
+    text-decoration: none;
+}
+
+.text-white a {
+    color: white;
+}
+
+/* Quickie Text Color ends here. */
+
+/* Quickie Background color. */
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: #005EF9;
+}
+
+.bg-grey {
+    background-color: #E1E1E1;
+}
+
+/* Quickie Background color ends here. */
+
+
+/* Quickie Height. */
+.height-50 {
+    height: 50px;
+}
+
+.height-100 {
+    height: 100px;
+}
+
+.height-150 {
+    height: 150px;
+}
+
+.height-200 {
+    height: 200px;
+}
+
+.height-250 {
+    height: 250px;
+}
+
+/* Quickie Height ends here. */
+
+/* Learning Management */
+.learning_display h4 {
+    margin-top: 40px;
+    color: #0043B1;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.learning_display h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.learning_display h1 span {
+    color: #3B82F6;
+    font-weight: bold;
+}
+
+.video_display {
+    margin-top: 50px;
+}
+
+/* Learning Management ends here. */
+
+/* Trusted By. */
+.Trust_Us_Text {
+    margin-top: 25px;
+    text-align: center;
+    color: #0051D7;
+    font-weight: bold;
+}
+
+.trust_row {
+    margin-top: 50px;
+}
+
+.trust_row_1 {
+    margin-top: 70px;
+    margin-left: -25px;
+}
+
+.trust_row_2 {
+    margin-top: 120px;
+    margin-left: -25px;
+}
+
+/* Trusted By ends here. */
+
+/* Our Journey Path */
+.journey h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.journey h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.journey img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+/* Our Journey Path ends here. */
+
+
+/* Free Online Programming Courses. */
+.free_online {
+    background-color: #E1E1E1;
+}
+
+.free_online_display {
+    background-color: #E1E1E1;
+}
+
+.free_online_display h2 {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #E1E1E1;
+    font-size: 30px;
+}
+
+.free_online_display p {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #E1E1E1;
+    font-size: larger;
+}
+
+/* Free Online Programming Courses ends here. */
+
+/* Top Programming Courses. */
+.course_card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+}
+
+.course_card_btn {
+    color: white;
+    background-color: #3B82F6;
+}
+
+.course_card_btn:hover {
+    color: white;
+    background-color: #0043B1;
+}
+
+.course_card_body {
+    padding-left: 2px;
+    border-radius: 20px;
+    margin-right: 21px;
+}
+
+.course_card_body:hover {
+    width: 17rem;
+    height: 379px;
+    padding-left: 2px;
+    border-radius: 20px;
+    margin-right: 21px;
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+    border-left-width: 2px;
+    border-bottom-color: #E1E1E1;
+    border-right-color: #E1E1E1;
+}
+
+.course_card_body img {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+/* Top Programming Courses ends here. */
+
+
+._gradient {
+    margin-top: 20px;
+    text-align: center;
+}
+
+._gradient h2 {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+._gradient p {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+._gradient li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #0043B1;
+}
+
+._gradient li span {
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+._image img {
+    margin-top: 20px;
+}

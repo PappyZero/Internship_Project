@@ -2,56 +2,98 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/13d098a0cf.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/header.css" />
-  <script src="js/header.js"></script>
-  <style>
-    .active {
-      color: white;
-      background-color: red !important;
-    }
-  </style>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Online bootstrap-css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+    <!-- Local bootstrap-css -->
+    <link rel="stylesheet" href="./css/bootstrap-css/bootstrap.css" />
+
+    <!-- Css File -->
+    <!-- <link rel="stylesheet" href="./css/header.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Brand Icon -->
+    <link rel="shortcut icon" href="./images/logo/14_Education.jpg" type="image/x-icon" />
+
+    <title>Document</title>
+
+
 </head>
 
 <body>
-  <section class="header_section">
-    <header class="header_class">
-      <nav class="header_nav">
-        <img src="image/logo/8(2).jpg" width="39" height="39" class="lo_go" />
+    <header>
+        <nav class="navbar fixed-top top_nav bg-white">
+            <div class="container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="./images/logo/14_Education-removebg-preview.png" width="120"></a>
+                    <button class="btn log_in_btn text-white text-deco" type="submit"><a href="./login_signup.php">LOGIN</a></button>
+                    <button class="btn sign_up_btn text-white text-deco" type="submit"><a href="./login_signup.php">SIGN IN</a></button>
+                </div>
+            </div>
+        </nav>
 
-        <div>
-          <ul class="list_header">
-            <li id="ho_me"><a href="#">HOME</a></li>
-            <li id="bro_wse"><a href="#">BROWSE</a></li>
-            <li id="upd_ate"><a href="#">UPDATES</a></li>
-          </ul>
-        </div>
 
-        <div>
-          <label for="suzy" class="searchs">Search</label><input type="text" placeholder="Search.." name="suzy" />
-        </div>
+        <nav class="navbar navbar-expand-lg mid_nav bg-grey">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar_items" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <div>
-          <ul class="sign_in_up">
-            <li class="sign_in_btn">
-              <a href="#"><span class="fas fa-user in"></span>SIGN IN</a>
-            </li>
-            <li>|</li>
-            <li class="sign_up_btn">
-              <a href="#"><span class="fas fa-user up"></span> SIGN UP</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Overview</a>
+                            <div class="dropdown-content">
+                                <a href="#">Online Lessons</a>
+                                <a href="#">Course Builder</a>
+                                <a href="#">Page Builders</a>
+                                <a href="#">Live Streams</a>
+                                <a href="#">Advanced Quiz</a>
+                                <a href="#">Student Management</a>
+                            </div>
+                        </li>
 
-      <div>
-        <nav class="header_nav2">.</nav>
-      </div>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resource</a>
+                            <div class="dropdown-content">
+                                <a href="#">Documentation</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Facebook Community</a>
+                                <a href="#">LinkedIn Community</a>
+                                <a href="#">My Account</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pricing</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Live Demo</a>
+                            <div class="dropdown-content">
+                                <a href="#">Student Demo</a>
+                                <a href="#">Starter Theme</a>
+                                <a href="#">Teacher Demo</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teach Here</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Online Degree</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-  </section>
+
 </body>
 
 </html>
