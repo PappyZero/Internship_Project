@@ -31,12 +31,12 @@
         <input type="checkbox" id="toggle" />
         <div class="signin">
             <h1>SIGN IN</h1>
+            <div class="social">
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
             <form>
-                <div class="social">
-                    <a href=""><i class="fab fa-google-plus-g"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
                 <p>USE ENTER INFO</p>
                 <input type="email" placeholder="EMAIL  " />
                 <input type="password" placeholder="PASSWORD  " />
@@ -48,14 +48,15 @@
                 </small>
             </form>
         </div>
+
         <div class="signup">
             <h1>CREATE AN ACCOUNT</h1>
+            <div class="social">
+                <a href="https://gmail.com"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </div>
             <form>
-                <div class="social">
-                    <a href="https://gmail.com"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-                </div>
                 <p>OR ENTER YOUR DETAILS</p>
                 <input type="text" placeholder="LAST NAME" />
                 <input type="text" placeholder="FIRST NAME" />

@@ -27,9 +27,6 @@ body {
     text-decoration: none;
 }
 
-.text-white a {
-    color: white;
-}
 
 /* Quickie Text Color ends here. */
 
@@ -85,143 +82,44 @@ body {
 /* -------------------------------------------------------- */
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* Top Nav and the logo/brand image. */
-.top_nav {
-    width: 100%;
-    position: sticky;
-    top: 0px;
-}
-
-.navbar-brand img {
-    margin-left: 100px;
-}
-
-/* .navbar-brand img:hover { 
-    margin-left: 100px;
-    width: 121px;
-    border-bottom-width: 3px;
-    border-right-width: 3px;
-    border-bottom-color: #E1E1E1;
-    border-right-color: #E1E1E1;
-}*/
-
-/* Top Nav and the logo/brand image ends here. */
-
-
-/* Login and Signup Button On Top Nav. */
-
-.log_in_btn {
-    background-color: #4a8cf6;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-left: 700px;
-    letter-spacing: 4px;
-    font-weight: bolder;
-    font-family: 'Outfit', sans-serif;
-}
-
-.sign_up_btn {
-    background-color: #4a8cf6;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-left: 40px;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    font-family: 'Outfit', sans-serif;
-}
-
-.log_in_btn:hover {
-    background-color: #005EF9;
-    border-bottom-width: 3px;
-    border-right-width: 2px;
-    border-bottom-color: #E1E1E1;
-    border-right-color: #E1E1E1;
-}
-
-.sign_up_btn:hover {
-    background-color: #005EF9;
-    border-bottom-width: 3px;
-    border-right-width: 2px;
-    border-bottom-color: #E1E1E1;
-    border-right-color: #E1E1E1;
-}
-
-/* Login and Signup Button On Top Nav ends here. */
-
-
-
 /* Middle Navbar */
-
-.navbar_items {
-    text-align: center;
-    /* Horizontally center the items */
-    height: 50px;
-    /* Adjust the height as needed */
-    padding-left: 550px;
-    font-family: 'Outfit', sans-serif;
-}
-
-.mid_nav li {
+.dropdown-menu {
     margin: 0 10px;
-    font-family: 'Outfit', sans-serif;
+    border: #3B82F6 solid 2px;
 }
 
-.navbar_items ul li a {
+.nav_items ul li a {
     color: #000000;
     padding: 10px;
-    font-family: 'Outfit', sans-serif;
 }
 
-.navbar_items ul li a:hover {
+.nav_items ul li a:hover {
     color: #3B82F6;
-    font-family: 'Outfit', sans-serif;
+}
+
+.mobile_top_nav {
+    display: none;
 }
 
 /* Middle Navbar ends here. */
 
+/* Top Nav & Mid Nav Mobile View starts here */
 
-/* Dropdown Styles */
-.dropdown {
-    position: relative;
-    padding-top: 10px;
+@media screen and (max-width:991px) {
+    .top_nav {
+        display: none;
+    }
+
+    .mobile_top_nav {
+        display: inline;
+    }
 }
 
-.dropdown a {
-    position: relative;
-    text-decoration: none;
-}
+/* 768 */
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    min-width: 160px;
-    border: #3B82F6 solid 2px;
-    font-family: 'Outfit', sans-serif;
-}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/* Top Nav & Mid Nav Mobile View ends here */
 
-.dropdown-content a {
-    padding: 10px;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-    display: block;
-    font-family: 'Outfit', sans-serif;
-}
-
-.dropdown-content a:hover {
-    background-color: #E1E1E1;
-}
-
-/* Dropdown Styles ends here*/
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -308,9 +206,6 @@ body {
 
 
 /* Free Online Programming Courses. */
-.free_online {
-    background-color: #E1E1E1;
-}
 
 .free_online_display {
     background-color: #E1E1E1;
@@ -319,14 +214,12 @@ body {
 .free_online_display h2 {
     margin-top: 20px;
     text-align: center;
-    background-color: #E1E1E1;
     font-size: 30px;
 }
 
 .free_online_display p {
     margin-top: 30px;
     text-align: center;
-    background-color: #E1E1E1;
     font-size: larger;
 }
 
@@ -406,6 +299,38 @@ body {
 
 ._image img {
     margin-top: 20px;
+}
+
+/* FAQ style for the lines. */
+.above-line,
+.below-line {
+    border: 0;
+    /* Remove the default border */
+    border-top: 2px solid #000;
+    /* Set the border color and thickness for the lines */
+    margin: 10px 0;
+    /* Adjust margin as needed to control the spacing */
+}
+
+/* Center the text and style it */
+.text-with-lines {
+    margin-top: 60px;
+}
+
+.text-with-lines h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #005EF9;
+}
+
+.faq_row {
+    margin-top: 40px;
+}
+
+.faq_row_ans {
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
