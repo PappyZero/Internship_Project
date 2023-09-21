@@ -57,6 +57,11 @@ body {
     background-color: #E1E1E1;
 }
 
+/* .bg-blue-gradient {
+    background-color: #3B82F6;
+    background-image: var(--bs-gradient);
+} */
+
 /* Quickie Background color ends here. */
 
 
@@ -89,26 +94,74 @@ body {
 /* -------------------------------------------------------- */
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* Middle Navbar */
+
+/* Top Navbar starts here. */
+.nav_brand_text {
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Top Navbar ends here. */
+
+/* Middle Navbar starts here. */
+
+/* Middle nav items start here.  */
+.nav_items ul li a {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.nav_items ul li a:hover {
+    color: black;
+}
+
+/* Middle nav items ends here.  */
+
+/* Dropdown text starts here. */
 .dropdown-menu {
     margin: 0 10px;
     border: #3B82F6 solid 2px;
 }
 
-.nav_items ul li a {
-    color: #000000;
-    padding: 10px;
+#overview_dropdown li a {
+    color: black;
 }
 
-.nav_items ul li a:hover {
+#resourse_dropdown li a {
+    color: black;
+}
+
+#livedemo_dropdown li a {
+    color: black;
+}
+
+/* Hover */
+#overview_dropdown li a:hover {
     color: #3B82F6;
 }
+
+#resourse_dropdown li a:hover {
+    color: #3B82F6;
+}
+
+#livedemo_dropdown li a:hover {
+    color: #3B82F6;
+}
+
+/* Dropdown text ends here. */
+
+
+
+/* Middle Navbar ends here. */
 
 .mobile_top_nav {
     display: none;
 }
 
-/* Middle Navbar ends here. */
+.mobile_nav_brand_text {
+    display: none;
+}
 
 /* Top Nav & Mid Nav Mobile View starts here */
 
@@ -120,10 +173,17 @@ body {
     .mobile_top_nav {
         display: inline;
     }
+
+    .nav_brand_text {
+        display: none;
+    }
+
+    .mobile_nav_brand_text {
+        display: inline;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
-
-/* 768 */
-
 
 /* Top Nav & Mid Nav Mobile View ends here */
 

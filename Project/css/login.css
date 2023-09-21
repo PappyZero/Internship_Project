@@ -147,9 +147,10 @@ body {
     opacity: 0.7;
 }
 
-.container form small label {
+.container form small a {
     color: rgba(236, 156, 156, 0.89);
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -157,8 +158,7 @@ body {
 
 
 /* signin and signup class starts here */
-.signin,
-.signup {
+.signin {
     color: rgb(255, 255, 255);
     position: relative;
     top: 0;
@@ -204,32 +204,4 @@ body {
 p {
     text-align: center;
     margin: 2rem;
-}
-
-
-
-.signup {
-    display: none;
-}
-
-#toggle:checked~.signin {
-    display: none;
-}
-
-#toggle:checked~.signup {
-    display: block;
-}
-
-#toggle {
-    appearance: none;
-}
-
-@keyframes pappy {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }

@@ -11,6 +11,10 @@ body {
     color: white;
 }
 
+.text-grey {
+    color: #E1E1E1;
+}
+
 .text-black {
     color: black;
 }
@@ -76,7 +80,6 @@ body {
 }
 
 /* Quickie Height ends here. */
-
 /* -------------------------------------------------------- */
 /* Header Page CSS starts here. */
 /* -------------------------------------------------------- */
@@ -127,20 +130,20 @@ body {
 /* Header Page CSS ends here. */
 /* -------------------------------------------------------- */
 
-
 /* -------------------------------------------------------- */
 /* Index Page CSS starts here. */
 /* -------------------------------------------------------- */
 
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Learning Management */
 .learning_display h4 {
-    margin-top: 50px;
     color: #0043B1;
     clear: both;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
 }
 
 .learning_display h1 {
@@ -154,18 +157,97 @@ body {
     font-weight: bold;
 }
 
-.video_display {
-    margin-top: 50px;
+/* Learning Management Mobile View starts here */
+.learning_display_mobile {
+    display: none;
 }
 
-/* Learning Management ends here. */
+.video_display_mobile {
+    display: none;
+}
 
+.learning_display_mobile h4 {
+    margin-top: 50px;
+    color: #0043B1;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.learning_display_mobile h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.learning_display_mobile h1 span {
+    color: #3B82F6;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+
+    .learning_display {
+        display: none;
+    }
+
+    .video_display {
+        display: none;
+    }
+
+    .learning_display_mobile h4 {
+        display: none;
+    }
+
+    .learning_display_mobile {
+        display: inline;
+        font-size: medium;
+    }
+
+    .video_display_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .learning_display_mobile h4 {
+        display: none;
+    }
+
+    .learning_display_mobile {
+        display: inline;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .video_display_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Learning Management Mobile View ends here */
+
+
+/* 768 1200*/
+
+/* Learning Management ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Trusted By. */
 .Trust_Us_Text {
-    margin-top: 25px;
+    margin-top: 30px;
     text-align: center;
     color: #0051D7;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .trust_row {
@@ -182,8 +264,30 @@ body {
     margin-left: -25px;
 }
 
-/* Trusted By ends here. */
+/* Mobile View for Trusted By starts here. */
+.trust_row_mobile {
+    display: none;
+    margin-top: 50px;
+}
 
+@media screen and (max-width:991px) {
+    .trust_row {
+        display: none;
+    }
+
+    .trust_row_mobile {
+        display: grid;
+    }
+}
+
+/* Mobile View for Trusted By starts here. */
+
+
+/* Trusted By ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Our Journey Path */
 .journey h1 {
     text-align: center;
@@ -201,10 +305,14 @@ body {
     border-radius: 50px;
 }
 
-
 /* Our Journey Path ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Free Online Programming Courses. */
 
 .free_online_display {
@@ -224,7 +332,11 @@ body {
 }
 
 /* Free Online Programming Courses ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Top Programming Courses. */
 .course_card {
     margin-top: 50px;
@@ -242,7 +354,7 @@ body {
     background-color: #0043B1;
 }
 
-.course_card_body {
+/* .course_card_body {
     padding-left: 2px;
     border-radius: 20px;
     margin-right: 21px;
@@ -264,30 +376,27 @@ body {
 .course_card_body img {
     margin-top: 12px;
     margin-left: 5px;
-}
+} */
 
 /* Top Programming Courses ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
-._gradient {
-    margin-top: 20px;
-    text-align: center;
-}
 
-._gradient h2 {
-    margin-top: 30px;
-    font-size: 50px;
-}
-
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Best Computer Programming Certificates starts here. */
 ._gradient p {
-    margin-top: 50px;
-    font-size: 25px;
+    font-size: 30px;
+}
+
+._gradient span {
+    font-size: 30px;
 }
 
 ._gradient li {
     display: inline-block;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     color: #0043B1;
 }
 
@@ -297,10 +406,55 @@ body {
     color: black;
 }
 
-._image img {
-    margin-top: 20px;
+._gradient_mobile {
+    display: none;
 }
 
+/*  */
+
+@media screen and (max-width:1740px) {
+
+    ._gradient {
+        display: none;
+    }
+
+    ._image {
+        width: 100%;
+    }
+
+    ._gradient_mobile {
+        display: inline-block;
+        overflow: scroll;
+    }
+
+    ._gradient_mobile p {
+        font-size: 30px;
+    }
+
+    ._gradient_mobile span {
+        font-size: 30px;
+    }
+
+    ._gradient_mobile li {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 20px;
+        color: #0043B1;
+    }
+
+    ._gradient_mobile li span {
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
+    }
+
+}
+
+/* Best Computer Programming Certificates ends here. */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Frequently asked questions starts here.  */
 /* FAQ style for the lines. */
 .above-line,
 .below-line {
@@ -313,11 +467,11 @@ body {
 }
 
 /* Center the text and style it */
-.text-with-lines {
+.f-a-q {
     margin-top: 60px;
 }
 
-.text-with-lines h1 {
+.f-a-q h1 {
     text-align: center;
     font-weight: bold;
     color: #005EF9;
@@ -327,12 +481,21 @@ body {
     margin-top: 40px;
 }
 
+.faq_row_ques {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
 .faq_row_ans {
     background-color: #E1E1E1;
     border-radius: 20px;
     margin-top: 10px;
+    display: none;
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Frequently asked questions starts here.  */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* -------------------------------------------------------- */

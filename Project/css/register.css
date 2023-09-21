@@ -147,17 +147,16 @@ body {
     opacity: 0.7;
 }
 
-.container form small label {
+.container form small a {
     color: rgba(236, 156, 156, 0.89);
     cursor: pointer;
+    text-decoration: none;
 }
-
 
 /* Container class of the form ends here */
 
 
-/* signin and signup class starts here */
-.signin,
+/* Signup class starts here */
 .signup {
     color: rgb(255, 255, 255);
     position: relative;
@@ -204,32 +203,4 @@ body {
 p {
     text-align: center;
     margin: 2rem;
-}
-
-
-
-.signup {
-    display: none;
-}
-
-#toggle:checked~.signin {
-    display: none;
-}
-
-#toggle:checked~.signup {
-    display: block;
-}
-
-#toggle {
-    appearance: none;
-}
-
-@keyframes pappy {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }

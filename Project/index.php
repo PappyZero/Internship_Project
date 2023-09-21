@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <!-- Online bootstrap-css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
+    <!-- Local bootstrap-css -->
+    <link rel="stylesheet" href="./css/bootstrap-css/bootstrap.css" />
+
     <!-- Css File -->
-    <!-- <link rel="stylesheet" href="./css/index.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 
     <!-- Brand Icon -->
     <link rel="shortcut icon" href="./images/logo/14_Education.jpg" type="image/x-icon" />
@@ -21,95 +28,251 @@
     <nav class="navbar bg-white top_nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo/14_Education-removebg-preview.png" alt="Logo" width="120" height="74" class="d-inline-block align-text-top"></a>
+                <img src="./images/logo/14_Education-removebg-preview.png" alt="Logo" width="120" height="74" class="d-inline-block align-text-top">
+            </a>
+
+            <p class="mt-3 nav_brand_text">Enlightened Tempest</p>
+
             <div class="gap-2 d-md-flex justify-content-md-end">
-                <a class="btn btn-primary" href="./login_signup.php" role="button">LOGIN</a>
-                <a class="btn btn-primary" href="./login_signup.php" role="button">SIGN IN</a>
+                <a class="btn btn-primary" href="./login.php" role="button">LOGIN<i class="fa fa-user" style="color: #ffffff;"></i></a>
+                <a class="btn btn-primary" href="./register.php" role="button">REGISTER<i class="fa fa-user fa-bounce" style="color: #ffffff;"></i></a>
             </div>
         </div>
     </nav>
     <!-- Desktop View Top Nav Ends Here -->
 
-    <nav class="navbar navbar-expand-lg bg-grey">
-        <div class="container-fluid mid_nav">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Desktop View Learning Management starts here. -->
+    <div class="container">
+        <div class="row m-4 mt-5">
 
-            <div class="collapse navbar-collapse nav_items" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Overview
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Online Lessons</a></li>
-                            <li><a class="dropdown-item" href="#">Course Builder</a></li>
-                            <li><a class="dropdown-item" href="#">Page Builders</a></li>
-                            <li><a class="dropdown-item" href="#">Live Streams</a></li>
-                            <li><a class="dropdown-item" href="#">Advanced Quiz</a></li>
-                            <li><a class="dropdown-item" href="#">Student Management</a></li>
+            <div class="col-md-1"></div>
 
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Resource
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Documentation</a></li>
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Facebook Community</a></li>
-                            <li><a class="dropdown-item" href="#">LinkedIn Community</a></li>
-                            <li><a class="dropdown-item" href="#">My Account</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Pricing
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Live Demo
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Student Demo</a></li>
-                            <li><a class="dropdown-item" href="#">Starter Theme</a></li>
-                            <li><a class="dropdown-item" href="#">Teacher Demo</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Teach Here
-                        </a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Online Degree
-                        </a>
-                    </li>
-
-                </ul>
+            <div class="col-md-4 learning_display ">
+                <h4 class="mt-5"> <strong>LEARNING MANAGEMENT SYSTEM</strong> </h4>
+                <h1>Watch <span>lecture videos</span> of some of the best tutors on <span>programming languages</span> </h1>
             </div>
 
-            <!-- Mobile View Top Nav Starts Here -->
-            <div class="gap-2 d-md-flex justify-content-md-end">
-                <a class="btn btn-primary mobile_top_nav" href="./login_signup.php" role="button">LOGIN</a>
-                <a class="btn btn-primary mobile_top_nav" href="./login_signup.php" role="button">SIGN IN</a>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5 video_display mt-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz19nXWJZbk?si=_N3huQykuSyDfHDg" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <!-- Mobile View Top Nav Ends Here -->
         </div>
-    </nav>
+    </div>
+    <!-- Desktop View Learning Management ends here. -->
 
-    <div class="container-fluid">
+    <!-- Mobile View Learning Management starts here. -->
+    <div class="learning_display_mobile">
+        <h4> <strong>LEARNING MANAGEMENT SYSTEM</strong> </h4>
+        <h1>Watch <span>lecture videos</span> of some of the best tutors on <span>programming languages</span> </h1>
+    </div>
+
+    <div class="video_display_mobile mt-5">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/Wz19nXWJZbk?si=_N3huQykuSyDfHDg" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <!-- Mobile View Learning Management starts here. -->
+
+
+    <div class="container">
+        <div class="row journey">
+            <h1 class="text-black">YOUR JOURNEY TOWARDS LEARNING</h1>
+            <h2 class="text-blue">From total noob ➔ Algorithmic Programmer</h2>
+            <img src="./images/content/learning path_4.jpg" class="img-fluid" width="100%">
+        </div>
+    </div>
+
+    <div class="container-fluid h-100">
+        <h2 class="text-center g-3 mt-5"><strong>Best Computer Programming Certificates for 2023</strong></h2>
         <div class="row">
-            <div class="col-md-6 bg-white  _image">
+
+            <!-- Best Programming Carousel Images starts here.  -->
+            <div class="col-md-6 bg-white g-3 _image">
+                <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./images/content/Carousel_5 (2).jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/content/Carousel_5.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/content/Comp Science Certificate.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/content/Microsoft Award_1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./images/content/Carousel_6.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Best Programming Carousel Images ends here.  -->
+
+
+            <!-- Desktop View for Best Computer Programming Certificates starts here. -->
+            <div class="col-md-6 text-center g-3">
+                <div class="_gradient">
+                    <p>Computer programming certificates can indeed help IT professionals
+                        enhance their skills and stand out in the competitive job market.
+                        Here are some popular and respected certificate programs that
+                        provide excellent training opportunities:</p>
+                    <ul class="text-blue">
+                        <li> <span>*</span>Microsoft Certified: Azure Developer Associate </li>
+                        <li> <span>*</span>AWS Certified Developer - Associate</li>
+                        <li> <span>*</span>Certified Information Systems Security Professional (CISSP)</li>
+                        <li> <span>*</span>Google Associate Android Developer</li>
+                        <li> <span>*</span>Certified Ethical Hacker (CEH)</li>
+                        <li> <span>*</span>Oracle Certified Professional, Java SE Programmer (OCPJP)</li>
+                        <li> <span>*</span>CompTIA Security</li>
+                    </ul>
+                    <span>
+                        Make choices of a certification that aligns with your career
+                        goals and the technologies you work with or plan to work with. Additionally,
+                        certificates should be complemented with hands-on experience and continuous
+                        learning to stay updated in the fast-paced field of IT and programming.
+                    </span>
+                </div>
+            </div>
+            <!-- Desktop View for Best Computer Programming Certificates starts here. -->
+
+
+            <!-- Mobile View for Best Computer Programming Certificates starts here. -->
+            <div class="_gradient_mobile text-center">
+                <p>Computer programming certificates can indeed help IT professionals
+                    enhance their skills and stand out in the competitive job market.
+                    Here are some popular and respected certificate programs that
+                    provide excellent training opportunities:</p>
+                <ul class="text-blue">
+                    <li> <span>*</span>Microsoft Certified: Azure Developer Associate </li>
+                    <li> <span>*</span>AWS Certified Developer - Associate</li>
+                    <li> <span>*</span>Certified Information Systems Security Professional (CISSP)</li>
+                    <li> <span>*</span>Google Associate Android Developer</li>
+                    <li> <span>*</span>Certified Ethical Hacker (CEH)</li>
+                    <li> <span>*</span>Oracle Certified Professional, Java SE Programmer (OCPJP)</li>
+                    <li> <span>*</span>CompTIA Security</li>
+                </ul>
+                <span>
+                    Make choices of a certification that aligns with your career
+                    goals and the technologies you work with or plan to work with. Additionally,
+                    certificates should be complemented with hands-on experience and continuous
+                    learning to stay updated in the fast-paced field of IT and programming.
+                </span>
+            </div>
+
+            <!-- Mobile View for Best Computer Programming Certificates ends here. -->
+
+        </div>
+    </div>
+
+    <!-- Desktop View for Course Cards starts here. -->
+    <div class="container d-flex flex-column mb-3">
+        <div class="row course_card m-5">
+            <div class="card col-md-2 course_card_body" style="width: 18rem;">
+                <img src="./images/content/R Programming.png" class="card-img-top img-responsive" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Business</h5>
+                    <p class="card-text">Introduction to R Programming and Consumers Wants in Marketing Analytics.<strong>₦12,000</strong></p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/technologies.jpg" class="card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Introduction to Connectivity Technologies and Sensor Networks.
+                        <strong>₦12,000</strong>
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/andy-holmes-webyw4NsFPg-unsplash.jpg" class="card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Advanced Diploma in Modern Application Development.
+                        <strong>₦12,000</strong>
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2 ml-3" style="width: 18rem;">
+                <img src="./images/content/Data Analytics with Python.jpg" class="card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Diploma in Data Analytics with Python - Data Reporting and Communication.<strong>₦12,000</strong></p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row course_card m-5">
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/Network Server Security.jpg" class="object-fit-lg-contain border rounded card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Network Server Security - Protecting the Server and Client Computers.<strong>₦12,000</strong></p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/NLP.png" class="object-fit-lg-contain border rounded card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Personal Development</h5>
+                    <p class="card-text">NLP - Neuro Linguistic Programming - Your Ultimate Guide To NLP.
+                        <strong>₦12,000</strong>
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/Networks and Internet Protocol.jpg" class="object-fit-lg-contain border rounded card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Advanced Diploma in Computer Networks and Internet Protocol - Cloud Networking.
+                        <strong>₦12,000</strong>
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+
+            <div class="card course_card_body col-md-2" style="width: 18rem;">
+                <img src="./images/content/Master Linux Shell Scripting.jpg" class="object-fit-lg-contain border rounded card-img-top" width="18rem" height="175">
+                <div class="card-body">
+                    <h5 class="card-title">Information Technology</h5>
+                    <p class="card-text">Master Linux and Shell Script From Beginner to Advanced.
+                        <strong>₦12,000</strong>
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop View for Course Cards ends here. -->
+
+
+
+    <!-- Desktop View for ___ starts here. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-white">
                 <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -119,17 +282,17 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_1.jpg" class="d-block w-100">
+                            <img src="./images/content/Carousel_1.jpg" class="object-fit-fill border rounded d-block w-100">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_2.jpg" class="d-block w-100">
+                            <img src="./images/content/Carousel_2.jpg" class="object-fit-fill border rounded d-block w-100">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_3.jpg" class="d-block w-100">
+                            <img src="./images/content/Carousel_3.jpg" class="object-fit-fill border rounded d-block w-100">
                         </div>
 
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_4.jpg" class="d-block w-100">
+                            <img src="./images/content/Carousel_4.jpg" class="object-fit-fill border rounded d-block w-100">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -143,71 +306,21 @@
                 </div>
             </div>
 
-            <div class="col-md-6 _gradient">
-                <p>hdhdhddhdhdhd</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 _gradient">
-                <h2>Best Computer Programming Certificates for 2023</h2>
-                <p>Computer programming certificates can indeed help IT professionals
-                    enhance their skills and stand out in the competitive job market.
-                    Here are some popular and respected certificate programs that
-                    provide excellent training opportunities:</p>
-                <ol>
-                    <li><span>*</span> Microsoft Certified: Azure Developer Associate </li>
-                    <li> <span>*</span> AWS Certified Developer - Associate</li>
-                    <li> <span>*</span> Certified Information Systems Security Professional (CISSP)</li>
-                    <li> <span>*</span> Google Associate Android Developer</li>
-                    <li> <span>*</span> Certified Ethical Hacker (CEH)</li>
-                    <li> <span>*</span> Oracle Certified Professional, Java SE Programmer (OCPJP)</li>
-                    <li> <span>*</span> CompTIA Security</li>
-                </ol>
-                <p>
-                    Make choices of a certification that aligns with your career
-                    goals and the technologies you work with or plan to work with. Additionally,
-                    certificates should be complemented with hands-on experience and continuous
-                    learning to stay updated in the fast-paced field of IT and programming.
-                </p>
-
-            </div>
-
-            <div class="col-md-6 bg-white  _image">
-                <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_5 (2).jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_5.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_6.jpg" class="d-block w-100">
-                        </div>
-
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./images/content/Carousel_8.jpg" class="d-block w-100">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="col-md-6">
+                <div class="_gradient_">
+                    <p>hdhdhddhdhdhd</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Desktop View for ___ ends here. -->
+
+
+    <!-- Desktop View for FAQ starts here. -->
     <div class="container">
         <div class="row">
-            <div class="text-with-lines">
+            <div class="f-a-q">
                 <hr class="above-line">
                 <h1>FREQUENTLY ASKED QUESTIONS</h1>
                 <hr class="below-line">
@@ -215,60 +328,79 @@
         </div>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>What programming languages are covered in your courses?</strong></h4>
-            <h5 class="faq_row_ans">Our platform offers a wide range of programming courses,
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_1" role="button"><strong>What programming languages are covered in your courses?</strong></a>
+            <h5 class="faq_row_ans default-open" id="faq_row_ans_1">Our platform offers a wide range of programming courses,
                 including but not limited to Python, JavaScript, Java, C++,
                 and more. You can explore our course catalog to find courses on your preferred programming language.</h5>
-        </div>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>How can I enroll in a course?</strong></h4>
-            <h5 class="faq_row_ans">To enroll in a course, simply browse our course catalog,
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_2" role="button"><strong>How can I enroll in a course?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_2">To enroll in a course, simply browse our course catalog,
                 select the course you're interested in, and click the "Start Learning" button.
                 Follow the on-screen instructions to complete the enrollment process.</h5>
-        </div>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>Are your courses suitable for beginners?</strong></h4>
-            <h5 class="faq_row_ans">Yes, we offer courses suitable for beginners, intermediate learners,
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_3" role="button"><strong>Are your courses suitable for beginners?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_3">Yes, we offer courses suitable for beginners, intermediate learners,
                 and advanced programmers. Each course has a suggested skill level, so you can choose courses
                 that match your expertise.</h5>
-        </div>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>What types of course materials are provided?</strong></h4>
-            <h5 class="faq_row_ans">Our courses include video lectures, coding exercises, quizzes, assignments,
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_4" role="button"><strong>What types of course materials are provided?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_4">Our courses include video lectures, coding exercises, quizzes, assignments,
                 and downloadable resources. You'll have access to a variety of materials to enhance your learning experience.</h5>
-        </div>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>Can I access the course content at my own pace?</strong></h4>
-            <h5 class="faq_row_ans">Yes, you have the flexibility to learn at your own pace.
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_5" role="button"><strong>Can I access the course content at my own pace?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_5">Yes, you have the flexibility to learn at your own pace.
                 Once enrolled, you can access course materials 24/7 and progress through the content at a speed that suits you.</h5>
-        </div>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>Can I access the course content at my own pace?</strong></h4>
-            <h5 class="faq_row_ans">Yes, you have the flexibility to learn at your own pace.
-                Once enrolled, you can access course materials 24/7 and progress through the content at a speed that suits you.</h5>
-        </div>
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_6" role="button"><strong> Are there any prerequisites for specific courses?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_6">Some advanced courses may have prerequisites, which will be clearly mentioned in the course description.
+                We recommend reviewing the prerequisites before enrolling in such courses.</h5>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>Can I access the course content at my own pace?</strong></h4>
-            <h5 class="faq_row_ans">Yes, you have the flexibility to learn at your own pace.
-                Once enrolled, you can access course materials 24/7 and progress through the content at a speed that suits you.</h5>
-        </div>
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_7" role="button"><strong>How long do I have access to a course after enrolling?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_7">You'll have lifetime access to course materials after enrolling.
+                You can revisit and review the content as often as you like, even after completing the course.</h5>
+        </div><br>
 
         <div class="row faq_row">
-            <h4 class="faq_row_ques"><strong>Can I access the course content at my own pace?</strong></h4>
-            <h5 class="faq_row_ans">Yes, you have the flexibility to learn at your own pace.
-                Once enrolled, you can access course materials 24/7 and progress through the content at a speed that suits you.</h5>
-        </div>
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_8" role="button"><strong>Is there any certification upon course completion?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_8">Yes, upon successful completion of a course, you'll receive a certificate of completion.
+                This certificate can be a valuable addition to your resume.</h5>
+        </div><br>
+
+        <div class="row faq_row">
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_9" role="button"><strong> What payment methods do you accept?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_9">We accept various payment methods, including credit/debit cards and online payment platforms.
+                You can choose the payment option that's most convenient for you during the enrollment process.</h5>
+        </div><br>
+
+        <div class="row faq_row">
+            <a class="btn faq_row_ques text-start" id="faq_row_ques_10" role="button"><strong> Do you offer refunds if I'm not satisfied with a course?</strong></a>
+            <h5 class="faq_row_ans" id="faq_row_ans_10">Yes, we have a refund policy. If you're not satisfied with a course, you can request a refund within
+                7 days of enrollment. Please review our refund policy for more details.</h5>
+        </div><br>
     </div>
+    <!-- Desktop View for FAQ ends here. -->
 
+
+    <!-- Online Bootstrap-js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- JavaScript File -->
+    <script src="./js/index.js"></script>
 </body>
-<!-- Online Bootstrap-js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+<?php
+include("./footer.php")
+?>
 
 </html>
