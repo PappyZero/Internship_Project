@@ -1,28 +1,52 @@
 <?php
-include("./connect_DB.php");
+session_start();
 
-// Getting the user's input.
-$login_email = $_POST["login_email"];
-$login_password = $_POST["login_password"];
+// Connecting this page with the database page
+include("./include/connect_DB.php");
 
-// Authentication to check if the email exists.
-$query = "SELECT * FROM register WHERE email = '$login_email'";
-$query_result = mysqli_query($conn, $query);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Getting the user's input.
+    $login_email = $_POST["login_email"];
+    $login_password = $_POST["login_password"];
 
-if (!$query_result) {
-    // Check for database query errors.
-    echo "Error: " . mysqli_error($conn);
-} else {
-    if (mysqli_num_rows($query_result) == 1) {
-        $row = mysqli_fetch_assoc($query_result);
-        if (password_verify($login_password, $row["password"])) {
-            echo "<script> alert('LOGIN SUCCESSFUL !'); window.location='home.php'</script>";
-            // You can add further login logic here if needed
+    // Authentication to check if the email exists.
+    $query = "SELECT * FROM register WHERE email = ?";
+    $stmt = mysqli_prepare($conn, $query);
+
+    if ($stmt) {
+        mysqli_stmt_bind_param($stmt, "s", $login_email);
+        mysqli_stmt_execute($stmt);
+
+        $result = mysqli_stmt_get_result($stmt);
+
+        if (!$result) {
+            // Check for database query errors.
+            $_SESSION['error_message'] = "Database error: " . mysqli_error($conn);
+            // Redirect back to login.php
+            header("Location: login.php");
+            exit();
         } else {
-            echo "<script> alert('Incorrect Password !'); window.location='login.php'</script>";
+            if (mysqli_num_rows($result) == 1) {
+                $row = mysqli_fetch_assoc($result);
+                if (password_verify($login_password, $row["password"])) {
+                    // Creating a login session.
+                    $_SESSION['id'] = $row['id'];
+                    $_SESSION['email'] = $row['email'];
+                    $_SESSION['success_message'] = "LOGIN SUCCESSFULL";
+                    header("Location: home.php"); // Redirect to the home page
+                    exit();
+                } else {
+                    $_SESSION['error_message_1'] = "Incorrect Password";
+                    header("Location: login.php"); // Redirect back to login.php
+                    exit();
+                }
+            } else {
+                $_SESSION['error_message_2'] = "User not found";
+                header("Location: login.php"); // Redirect back to login.php
+                exit();
+            }
         }
-    } else {
-        echo "<script> alert('User not found !'); window.location='login.php'</script>";
+        mysqli_stmt_close($stmt);
     }
 }
 

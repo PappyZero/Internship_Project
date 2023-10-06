@@ -77,15 +77,48 @@ body {
 /* Quickie Height ends here. */
 
 /* Top Navbar starts here. */
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
 .nav_brand_text {
     font-style: italic;
     font-size: 40px;
     font-weight: bold;
 }
 
+/* Adjust padding for mobile view */
+@media (max-width: 768px) {
+    .navbar.fixed-top {
+        padding: 10px 0;
+    }
+
+    .nav_brand_text {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .nav_brand_text {
+        display: flex;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:661px) {
+    .nav_brand_text {
+        display: none;
+    }
+}
+
 /* Top Navbar ends here. */
-
-
 
 /* -------------------------------------------------------- */
 /* Index Page CSS starts here. */

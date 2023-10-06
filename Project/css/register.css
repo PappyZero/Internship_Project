@@ -51,24 +51,26 @@ body {
     top: 0px;
     display: flex;
     justify-content: center;
-    /* Center the content horizontally */
     align-items: center;
-    /* Center the content vertically */
     height: 80px;
-    /* Set the height to your desired value */
     padding: 0;
-    /* Remove padding to prevent additional spacing */
 }
 
-
 .top_nav img {
-    /* Increase the width to make the logo larger */
     width: 150px;
-    /* Adjust the value as needed */
-    /* Remove the margin and justify-content for the logo */
     margin: 0;
     justify-content: center;
     border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    animation: animate_Bg 5s linear infinite;
+}
+
+@keyframes animate_Bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
 }
 
 /* Top Nav and the logo/brand image ends here. */
@@ -85,12 +87,17 @@ body {
 .container h1 {
     font-size: larger;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .container form a {
     color: white;
-    margin-top: 5px;
+    margin-top: 3px;
+}
+
+.container form h5 {
+    text-align: center;
+    margin-top: 3px;
 }
 
 .container form input {
@@ -111,39 +118,21 @@ body {
     color: white;
 }
 
-.container form a input[type="submit"] {
-    background: #3B82F6;
-    transition: all 500% ease;
-    cursor: pointer;
-}
-
 .container form input[type="submit"] {
     background: #3B82F6;
     transition: all 500% ease;
     cursor: pointer;
+    border-radius: 40px;
+
 }
 
 .container form input[type="submit"]:hover {
     background-color: #0043B1;
 }
 
-.container form button::placeholder {
-    color: white;
-}
-
-.container form button[type="submit"] {
-    background: #3B82F6;
-    transition: all 500% ease;
-    cursor: pointer;
-}
-
-.container form button[type="submit"]:hover {
-    opacity: 0.6;
-}
-
 .container form small {
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     opacity: 0.7;
 }
 
@@ -151,6 +140,10 @@ body {
     color: rgba(236, 156, 156, 0.89);
     cursor: pointer;
     text-decoration: none;
+}
+
+.container form small a:hover {
+    text-decoration: underline;
 }
 
 /* Container class of the form ends here */
@@ -170,9 +163,10 @@ body {
     animation: pappy 1s ease-in-out forwards;
 }
 
-/* signin and signup class ends here */
+/* Signup class ends here */
 
-/* Other sign in/up option class starts here */
+
+/* Social class starts here */
 .social {
     display: flex;
     justify-content: center;
@@ -197,10 +191,4 @@ body {
     color: white;
 }
 
-/* Other sign in/up option class starts here */
-
-
-p {
-    text-align: center;
-    margin: 2rem;
-}
+/* Social class ends here */

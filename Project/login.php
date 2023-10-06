@@ -1,6 +1,7 @@
 <?php
-session_start()
+session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +23,22 @@ session_start()
             <img src="./images/logo/14_Education-removebg-preview.png" width="120">
         </div>
     </nav>
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
+    <?php
+    // Check if error messages are set and display them using JavaScript
+    if (isset($_SESSION['error_message_1'])) {
+        echo "<script>alert('{$_SESSION['error_message_1']}');</script>";
+        unset($_SESSION['error_message_1']); // Clear the error message
+    }
+
+    if (isset($_SESSION['error_message_2'])) {
+        echo "<script>alert('{$_SESSION['error_message_2']}');</script>";
+        unset($_SESSION['error_message_2']); // Clear the error message
+    }
+    ?>
     <div class="container">
         <div class="signin">
             <h1>SIGN IN</h1>
@@ -35,17 +48,20 @@ session_start()
                 <a href=""><i class="fab fa-linkedin-in"></i></a>
             </div>
             <form action="./login_connect.php" method="post">
-                <p>USE ENTER INFO</p>
+                <p>ENTER YOUR INFO</p>
                 <input type="email" placeholder="EMAIL" class="form-control" id="login_email" name="login_email" required />
                 <input type="password" placeholder="PASSWORD" class="form-control" id="login_password" name="login_password" required />
                 <br>
                 <a href="#">Forgot password? </a>
                 <br>
                 <input type="submit" value="LOGIN" />
-                <p>Remember me</p>
-                <small>DON'T HAVE AN ACCOUNT ? <a href="./register.php">SIGN UP</a></small>
+                <p>Remember me <input type="checkbox"></p>
+                <small>Don't have an account? <a href="./register.php">Register</a></small>
             </form>
         </div>
+    </div>
+
+
 
 </body>
 

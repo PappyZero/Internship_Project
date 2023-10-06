@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INDEX</title>
 
     <!-- Online bootstrap-css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
@@ -25,21 +25,31 @@
 
 <body>
     <!-- Desktop View Top Nav Starts Here -->
-    <nav class="navbar bg-white top_nav">
-        <div class="container-fluid">
+    <nav class="navbar bg-white top_nav fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo/14_Education-removebg-preview.png" alt="Logo" width="120" height="74" class="d-inline-block align-text-top">
             </a>
 
             <p class="mt-3 nav_brand_text">Enlightened Tempest</p>
 
-            <div class="gap-2 d-md-flex justify-content-md-end">
+            <div class="ml-auto">
                 <a class="btn btn-primary" href="./login.php" role="button">LOGIN<i class="fa fa-user" style="color: #ffffff;"></i></a>
                 <a class="btn btn-primary" href="./register.php" role="button">REGISTER<i class="fa fa-user fa-bounce" style="color: #ffffff;"></i></a>
             </div>
         </div>
     </nav>
     <!-- Desktop View Top Nav Ends Here -->
+
+
+    <!-- Desktop View Mid Nav Starts Here -->
+    <nav class="navbar bg-white mid_nav">
+        <div class="container-fluid">
+            <p></p>
+        </div>
+    </nav>
+    <!-- Desktop View Mid Nav Ends Here -->
+
 
     <!-- Desktop View Learning Management starts here. -->
     <div class="container">
@@ -177,7 +187,7 @@
     <div class="container d-flex flex-column mb-3">
         <div class="row course_card m-5">
             <div class="card col-md-2 course_card_body" style="width: 18rem;">
-                <img src="./images/content/R Programming.png" class="card-img-top img-responsive" width="18rem" height="175">
+                <img src="./images/content/R Programming.png" class="card-img-top img-responsive" width="18rem" height="it yet">
                 <div class="card-body">
                     <h5 class="card-title">Business</h5>
                     <p class="card-text">Introduction to R Programming and Consumers Wants in Marketing Analytics.<strong>₦12,000</strong></p>

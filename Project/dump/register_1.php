@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="../dump/register_1.css">
 
     <!-- Brand Icon -->
     <link rel="shortcut icon" href="./images/logo/14_Education.jpg" type="image/x-icon" />
@@ -16,7 +16,7 @@
     <!-- Header File -->
     <nav class="navbar fixed-top top_nav_bar bg-white">
         <div class="container-fluid top_nav">
-            <img src="./images/logo/14_Education-removebg-preview.png" width="120">
+            <img src="../images/logo/14_Education-removebg-preview.png" width="120">
         </div>
     </nav>
     <title>Document</title>
@@ -31,8 +31,8 @@
                 <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <form action="./register_connect.php" method="post">
-                <h5>OR ENTER YOUR DETAILS</h5>
+            <form action="#" method="post">
+                <h5 class="text-center">OR ENTER YOUR DETAILS</h5>
                 <input type="text" placeholder="LAST NAME" class="form-control" id="lastName" name="lastName" required />
                 <input type="text" placeholder="FIRST NAME" class="form-control" id="firstName" name="firstName" required />
                 <input type="email" placeholder="EMAIL" class="form-control" id="email" name="email" required />
@@ -51,13 +51,11 @@
                 </small>
                 <input type="submit" value="REGISTER" name="register_btn" />
                 <small>ALREADY HAVE AN ACCOUNT ?
-                    <a href="./login.php">SIGN IN</a>
+                    <a href="#">SIGN IN</a>
                 </small>
             </form>
         </div>
-
     </div>
-
 </body>
 
 </html>

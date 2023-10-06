@@ -30,9 +30,6 @@
 
 /* Quickie Text Color ends here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +42,9 @@ body {
     height: 100vh;
     font-family: 'Outfit', sans-serif;
     font-size: larger;
+    background-size: cover;
+    background-position: center;
+    animation: animate_Bg 5s linear infinite;
 }
 
 /* Top Nav and the logo/brand image. */
@@ -54,20 +54,10 @@ body {
     top: 0px;
     display: flex;
     justify-content: center;
+    /* Center the content horizontally */
     align-items: center;
     height: 80px;
     padding: 0;
-}
-
-
-.top_nav img {
-    width: 150px;
-    margin: 0;
-    justify-content: center;
-    border-radius: 30px;
-    background-size: cover;
-    background-position: center;
-    animation: animate_Bg 5s linear infinite;
 }
 
 @keyframes animate_Bg {
@@ -91,12 +81,17 @@ body {
 .container h1 {
     font-size: larger;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .container form a {
     color: white;
-    margin-top: 5px;
+    margin-top: 3px;
+}
+
+.container form h5 {
+    text-align: center;
+    margin-top: 3px;
 }
 
 .container form input {
@@ -122,6 +117,7 @@ body {
     transition: all 500% ease;
     cursor: pointer;
     border-radius: 40px;
+
 }
 
 .container form input[type="submit"]:hover {
@@ -130,7 +126,7 @@ body {
 
 .container form small {
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     opacity: 0.7;
 }
 
@@ -144,12 +140,11 @@ body {
     text-decoration: underline;
 }
 
-
 /* Container class of the form ends here */
 
 
-/* signin and signup class starts here */
-.signin {
+/* Signup class starts here */
+.signup {
     color: rgb(255, 255, 255);
     position: relative;
     top: 0;
@@ -162,9 +157,10 @@ body {
     animation: pappy 1s ease-in-out forwards;
 }
 
-/* signin and signup class ends here */
+/* Signup class ends here */
 
-/* Other sign in/up option class starts here */
+
+/* Social class starts here */
 .social {
     display: flex;
     justify-content: center;
@@ -189,10 +185,4 @@ body {
     color: white;
 }
 
-/* Other sign in/up option class starts here */
-
-
-p {
-    text-align: center;
-    margin: 2rem;
-}
+/* Social class ends here */

@@ -18,20 +18,20 @@
   <link rel="shortcut icon" href="./images/logo/14_Education.jpg" type="image/x-icon" />
 
   <?php
-  include("./header.php")
+  include("./include/header.php")
   ?>
 
 </head>
 
 <body>
   <!-- Login successful alert starts here.  -->
-  <?php
-  // Check if a success message and email are set in the URL (passed from the login page)
-  // if (isset($_GET["success"]) && $_GET["success"] == "true" && isset($_GET["login_email"])) {
-  //   $login_email = $_GET["login_email"];
-  //   echo "<h2>LOGIN SUCCESSFULLY!<p>Welcome:$login_email</p></h2>";
-  // }
-  ?>
+  <!-- <?php
+        // Check if error messages are set and display them using JavaScript
+        // if (isset($_SESSION['success_message'])) {
+        //   echo "<script>alert('{$_SESSION['success_message']}');</script>";
+        //   unset($_SESSION['success_message']); // Clear the error message
+        // }
+        ?> -->
 
   <!-- Login successful alert starts here.  -->
 
@@ -180,42 +180,28 @@
     </div>
   </div>
   <!-- Desktop View for Trusted By ends here. -->
-
-
-
-
-  <div class="container-fluid">
-    <div class="row journey">
-      <h1 class="text-black">YOUR JOURNEY TOWARDS LEARNING</h1>
-      <h2 class="text-blue">From total noob ➔ Algorithmic Programmer</h2>
-      <img src="./images/content/learning path_4.jpg" class="img-fluid" width="100%">
-    </div>
-  </div>
-
-  <!-- Desktop View for the free online programaming courses starts here. -->
   <div class="container text-center">
     <div class="row mt-5">
-      <div class="col-2">
+      <div class="col-md-2 col-12 mb-3">
         <img src="./images/content/true-agency-unsplash.jpg" class="rounded img-fluid" width="100%">
       </div>
 
-      <div class="col-8 free_online_display">
-        <h2>
-          <strong>Free Online Programming Courses</strong>
-        </h2>
+      <div class="col-md-8 col-12 free_online_display">
+        <h2><strong>Free Online Programming Courses</strong></h2>
         <p>
-          These free online courses in programming have everything you need to get familiar with programming
-          at a professional level. Effective and competent programmers are in high demand on the employment market.
-          Covering everything from the readability of code to creating algorithms, these courses have everything you
-          need to build robust and reliable programming.
+          These free online courses in programming have everything you need to get familiar with programming at a
+          professional level. Effective and competent programmers are in high demand on the employment market.
+          Covering everything from the readability of code to creating algorithms, these courses have everything
+          you need to build robust and reliable programming.
         </p>
       </div>
 
-      <div class="col-2">
+      <div class="col-md-2 col-12">
         <img src="./images/content/thisisengineering-unsplash.jpg" class="rounded img-fluid" width="100%">
       </div>
     </div>
   </div>
+
   <!-- Desktop View for the free online programaming courses starts here. -->
 
 
@@ -352,7 +338,13 @@
 
       <div class="col-md-6">
         <div class="_gradient_">
-          <p>hdhdhddhdhdhd</p>
+          <h2><strong>Free Online Programming Courses</strong></h2>
+          <p>
+            These free online courses in programming have everything you need to get familiar with programming at a
+            professional level. Effective and competent programmers are in high demand on the employment market.
+            Covering everything from the readability of code to creating algorithms, these courses have everything
+            you need to build robust and reliable programming.
+          </p>
         </div>
       </div>
     </div>
@@ -528,7 +520,7 @@
   <!-- Desktop View for FAQ ends here. -->
 </body>
 <?php
-include("./footer.php")
+include("./include/footer.php")
 ?>
 <!-- Online Bootstrap-js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

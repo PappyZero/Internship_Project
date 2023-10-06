@@ -16,7 +16,7 @@
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
 
     <!-- Brand Icon -->
-    <link rel="shortcut icon" href="./images/logo/14_Education.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/logo/14_Education.jpg" type="image/x-icon" />
 
     <title>HEADER</title>
 
@@ -28,12 +28,13 @@
     <nav class="navbar bg-white top_nav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo/14_Education-removebg-preview.png" alt="Logo" width="120" height="74" class="d-inline-block align-text-top"></a>
+                <img src="../images/logo/14_Education-removebg-preview.png" alt="Logo" width="120" height="74" class="d-inline-block align-text-top top_nav_img">
+            </a>
 
             <p class="mt-3 nav_brand_text">Enlightened Tempest</p>
 
             <div class="gap-2 d-md-flex justify-content-md-end">
-                <a class="btn btn-primary" href="./index.php" role="button">LOGOUT</a>
+                <a class="btn btn-primary" href="./logout.php" role="button">LOGOUT</a>
             </div>
         </div>
     </nav>

@@ -96,6 +96,20 @@ body {
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* Top Navbar starts here. */
+.top_nav_img {
+
+    background-size: cover;
+    background-position: center;
+    animation: animate_Bg 5s linear infinite;
+}
+
+@keyframes animate_Bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
 .nav_brand_text {
     font-style: italic;
     font-size: 40px;
